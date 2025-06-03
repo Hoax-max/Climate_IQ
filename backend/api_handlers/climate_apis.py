@@ -250,11 +250,13 @@ class ClimateAPIHandler:
             
             sectors_data = response.json()
             
-            # Convert list to dict if needed
-            if isinstance(sectors_data, list):
+            # Handle the actual API response format (it's a dict, not a list)
+            if isinstance(sectors_data, dict):
+                sectors_dict = sectors_data
+            elif isinstance(sectors_data, list):
                 sectors_dict = {sector: idx for idx, sector in enumerate(sectors_data)}
             else:
-                sectors_dict = sectors_data
+                sectors_dict = {}
             
             return {
                 'sectors': sectors_dict,
