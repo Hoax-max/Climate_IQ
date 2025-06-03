@@ -1,0 +1,24 @@
+--- /workspace/Climate_IQ/.env
++++ /workspace/Climate_IQ/.env
+@@ -0,0 +1,5 @@
++# IBM watsonx.ai Configuration
++IBM_CLOUD_API_KEY=DEpIQ-eBB6HNdayC-T82ejY2FPbP2arw1jlk0ubv89Cs
++WATSONX_PROJECT_ID=your_watsonx_project_id
++IBM_CLOUD_URL=https://us-south.ml.cloud.ibm.com
++WATSONX_API_KEY=DEpIQ-eBB6HNdayC-T82ejY2FPbP2arw1jlk0ubv89Cs
+@@ -1,0 +7,15 @@
++# Climate Data APIs
++OPENWEATHER_API_KEY=5e172a22e5e4412a98dc331708df15ba
++CARBON_INTERFACE_API_KEY=ShPi2tb4XAMuLVO6c5RMDg
++NASA_API_KEY=aD45yiM5C8uJErMjBWgK3LTGBufejUQ9andcvdMr
++
++# API Base URLs
++CLIMATETRACE_API_BASE=https://api.climatetrace.org/v6
++CARBON_INTERFACE_API_BASE=https://www.carboninterface.com/api/v1
++NASA_API_BASE=https://power.larc.nasa.gov/api/temporal
++OPENWEATHER_API_BASE=https://api.openweathermap.org/data/2.5
++UN_SDG_API_BASE=https://unstats.un.org/SDGAPI/v1
++WORLD_BANK_API_BASE=https://api.worldbank.org/v2
++
++# Default settings
++DEFAULT_OUTPUT_FORMAT=json
