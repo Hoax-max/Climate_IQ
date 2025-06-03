@@ -1,0 +1,646 @@
+{
+  "test_run": {
+    "timestamp": "2025-06-03T13:25:32.430269",
+    "base_url": "https://api.climatetrace.org/v6",
+    "total_time": 1.0743234157562256,
+    "total_tests": 36
+  },
+  "results": [
+    {
+      "endpoint": "/definitions/sectors",
+      "test_name": "Sectors Definition - Format",
+      "status": "FAIL",
+      "response_time": 0.049102783203125,
+      "status_code": 200,
+      "error_message": "Expected dict format",
+      "data_sample": {
+        "actual_type": "list"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/definitions/subsectors",
+      "test_name": "Subsectors Definition",
+      "status": "PASS",
+      "response_time": 0.02409672737121582,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 72,
+        "sample": [
+          "aluminum",
+          "bauxite-mining",
+          "biological-treatment-of-solid-waste-and-biogenic",
+          "cement",
+          "chemicals"
+        ]
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/definitions/countries",
+      "test_name": "Countries Definition",
+      "status": "PASS",
+      "response_time": 0.012928247451782227,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "type": "list",
+        "sample": "[{'alpha3': 'ABW', 'alpha2': 'AW', 'name': 'Aruba', 'continent': 'North America'}, {'alpha3': 'AFG', 'alpha2': 'AF', 'name': 'Afghanistan', 'continent': 'Asia'}, {'alpha3': 'AGO', 'alpha2': 'AO', 'nam"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/definitions/groups",
+      "test_name": "Groups Definition",
+      "status": "PASS",
+      "response_time": 0.025109052658081055,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "type": "dict",
+        "sample": "{'ailac': ['CRI', 'GTM', 'HND', 'PAN', 'CHL', 'COL', 'PRY', 'PER'], 'aosis': ['COM', 'MUS', 'SYC', 'STP', 'CPV', 'GNB', 'SGP', 'TLS', 'MDV', 'ATG', 'BHS', 'BRB', 'CUB', 'DMA', 'DOM', 'GRD', 'HTI', 'JA"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/definitions/continents",
+      "test_name": "Continents Definition",
+      "status": "PASS",
+      "response_time": 0.0229794979095459,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 8,
+        "continents": [
+          "Unknown",
+          "North America",
+          "Asia",
+          "Africa",
+          "Europe",
+          "South America",
+          "Oceania",
+          "Antarctica"
+        ]
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/definitions/gases",
+      "test_name": "Gases Definition",
+      "status": "PASS",
+      "response_time": 0.012914896011352539,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 62,
+        "gases": [
+          "bc",
+          "c10f18",
+          "c2f6",
+          "c3f8",
+          "c4f10",
+          "c5f12",
+          "c6f14",
+          "c6h6",
+          "c-c3f6",
+          "c-c4f8",
+          "cf4",
+          "cfcs",
+          "ch2o",
+          "ch3oh",
+          "ch4",
+          "co",
+          "co2",
+          "co2e",
+          "co2e_100yr",
+          "co2e_20yr",
+          "h2s",
+          "hcfc-141b",
+          "hcfc-142b",
+          "hcs",
+          "hfc-125",
+          "hfc-134",
+          "hfc-134a",
+          "hfc-143",
+          "hfc-143a",
+          "hfc-152",
+          "hfc-152a",
+          "hfc-161",
+          "hfc-227ea",
+          "hfc-23",
+          "hfc-236cb",
+          "hfc-236ea",
+          "hfc-236fa",
+          "hfc-245ca",
+          "hfc-245fa",
+          "hfc-32",
+          "hfc-365mfc",
+          "hfc-41",
+          "hfc-43-10-mee",
+          "hfcs",
+          "hg",
+          "n2o",
+          "nf3",
+          "nh3",
+          "nmvoc",
+          "no2",
+          "nox",
+          "o3",
+          "oc",
+          "pahs",
+          "pb",
+          "pfcs",
+          "pm10",
+          "pm2_5",
+          "sf6",
+          "so2",
+          "sox",
+          "vocs"
+        ]
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Basic Assets Search - Format",
+      "status": "FAIL",
+      "response_time": 0.02398395538330078,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Assets by Country - Format",
+      "status": "FAIL",
+      "response_time": 0.02402949333190918,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Assets by Sector - Format",
+      "status": "FAIL",
+      "response_time": 0.04432845115661621,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Assets by Multiple Countries - Format",
+      "status": "FAIL",
+      "response_time": 0.025299072265625,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Assets with Continent Filter - Format",
+      "status": "FAIL",
+      "response_time": 0.02392268180847168,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/{id}",
+      "test_name": "Asset by ID - No Assets",
+      "status": "SKIP",
+      "response_time": 0,
+      "status_code": null,
+      "error_message": "No assets found to test with",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Basic Asset Emissions - Format",
+      "status": "FAIL",
+      "response_time": 0.01344752311706543,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Asset Emissions by Country - Format",
+      "status": "FAIL",
+      "response_time": 0.02274775505065918,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Asset Emissions by Sector - Format",
+      "status": "FAIL",
+      "response_time": 0.0320589542388916,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Asset Emissions Multiple Years - Format",
+      "status": "FAIL",
+      "response_time": 0.02445840835571289,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Asset Emissions by Continent - Format",
+      "status": "FAIL",
+      "response_time": 0.023936748504638672,
+      "status_code": 200,
+      "error_message": "Expected array format",
+      "data_sample": {
+        "actual_type": "dict"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Country Emissions - Basic",
+      "status": "WARNING",
+      "response_time": 0.013006448745727539,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 1,
+        "sample": {
+          "country": "USA",
+          "continent": "null",
+          "rank": 2,
+          "previousRank": 2,
+          "assetCount": null,
+          "emissions": {
+            "co2": 5584934099.969393,
+            "ch4": 31696640.294151884,
+            "n2o": 725402.6607640319,
+            "co2e_100yr": 6926459684.844201,
+            "co2e_20yr": 8795374779.908405
+          },
+          "worldEmissions": {
+            "co2": 45888233855.386444,
+            "ch4": 385839417.8811036,
+            "n2o": 9059741.711279148,
+            "co2e_100yr": 60850545186.93726,
+            "co2e_20yr": 82450922317.65431
+          },
+          "emissionsChange": {
+            "co2": 0,
+            "ch4": 0,
+            "n2o": 0,
+            "co2e_100yr": 0,
+            "co2e_20yr": 0
+          }
+        }
+      },
+      "notes": "Missing expected fields"
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Country Emissions - Multiple Countries",
+      "status": "WARNING",
+      "response_time": 0.023294687271118164,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 3,
+        "sample": {
+          "country": "CHN",
+          "continent": "null",
+          "rank": 1,
+          "previousRank": 1,
+          "assetCount": null,
+          "emissions": {
+            "co2": 28144785482.171402,
+            "ch4": 151565283.35836223,
+            "n2o": 3221592.548375134,
+            "co2e_100yr": 34413793985.523315,
+            "co2e_20yr": 42908859825.45771
+          },
+          "worldEmissions": {
+            "co2": 91287841683.62389,
+            "ch4": 765800212.1578732,
+            "n2o": 18212682.846142497,
+            "co2e_100yr": 120996526715.70801,
+            "co2e_20yr": 163826020564.58698
+          },
+          "emissionsChange": {
+            "co2": 74195450.9924925,
+            "ch4": 3029948.1399566494,
+            "n2o": -26414.993725087897,
+            "co2e_100yr": 179825449.5440639,
+            "co2e_20yr": 356246588.8382094
+          }
+        }
+      },
+      "notes": "Missing expected fields"
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Country Emissions - By Sector",
+      "status": "WARNING",
+      "response_time": 0.046579599380493164,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 1,
+        "sample": {
+          "country": "USA",
+          "continent": "null",
+          "rank": 2,
+          "previousRank": 2,
+          "assetCount": null,
+          "emissions": {
+            "co2": 5584934099.969393,
+            "ch4": 31696640.294151884,
+            "n2o": 725402.6607640319,
+            "co2e_100yr": 6926459684.844201,
+            "co2e_20yr": 8795374779.908405
+          },
+          "worldEmissions": {
+            "co2": 45888233855.386444,
+            "ch4": 385839417.8811036,
+            "n2o": 9059741.711279148,
+            "co2e_100yr": 60850545186.93726,
+            "co2e_20yr": 82450922317.65431
+          },
+          "emissionsChange": {
+            "co2": 0,
+            "ch4": 0,
+            "n2o": 0,
+            "co2e_100yr": 0,
+            "co2e_20yr": 0
+          }
+        }
+      },
+      "notes": "Missing expected fields"
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Country Emissions - By Continent",
+      "status": "WARNING",
+      "response_time": 0.02388596534729004,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 1,
+        "sample": {
+          "country": "null",
+          "continent": "North America",
+          "rank": 2,
+          "previousRank": 2,
+          "assetCount": null,
+          "emissions": {
+            "co2": 7299625524.754111,
+            "ch4": 47766598.23061093,
+            "n2o": 1092887.4621696167,
+            "co2e_100yr": 9240278554.361855,
+            "co2e_20yr": 12009199227.464495
+          },
+          "worldEmissions": {
+            "co2": 45888233855.386444,
+            "ch4": 385839417.8811036,
+            "n2o": 9059741.711279148,
+            "co2e_100yr": 60850545186.93726,
+            "co2e_20yr": 82450922317.65431
+          },
+          "emissionsChange": {
+            "co2": 0,
+            "ch4": 0,
+            "n2o": 0,
+            "co2e_100yr": 0,
+            "co2e_20yr": 0
+          }
+        }
+      },
+      "notes": "Missing expected fields"
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Country Emissions - Time Range",
+      "status": "WARNING",
+      "response_time": 0.02440023422241211,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 1,
+        "sample": {
+          "country": "USA",
+          "continent": "null",
+          "rank": 2,
+          "previousRank": 2,
+          "assetCount": null,
+          "emissions": {
+            "co2": 16191230895.0113,
+            "ch4": 92974760.34897807,
+            "n2o": 2220814.7515445994,
+            "co2e_100yr": 20145672246.11835,
+            "co2e_20yr": 25628297049.76354
+          },
+          "worldEmissions": {
+            "co2": 134719480168.53905,
+            "ch4": 1133195958.6138697,
+            "n2o": 27145106.632583935,
+            "co2e_100yr": 178680641073.90848,
+            "co2e_20yr": 242016230057.20718
+          },
+          "emissionsChange": {
+            "co2": 462710635.4306638,
+            "ch4": 1410955.9797449473,
+            "n2o": -13973.918580258665,
+            "co2e_100yr": 514289804.1994053,
+            "co2e_20yr": 597091478.3042341
+          }
+        }
+      },
+      "notes": "Missing expected fields"
+    },
+    {
+      "endpoint": "/admins/search",
+      "test_name": "Admin Search - By Name",
+      "status": "PASS",
+      "response_time": 0.02426314353942871,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "count": 3,
+        "sample": {
+          "Id": "USA.5_1",
+          "Name": "California State",
+          "FullName": "California State, USA",
+          "Level": 1,
+          "Gid0": "USA",
+          "Gid1": "USA.5_1",
+          "Gid2": ""
+        }
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/admins/search",
+      "test_name": "Admin Search - By Level - HTTP",
+      "status": "FAIL",
+      "response_time": 0.06365728378295898,
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/admins/search",
+      "test_name": "Admin Search - By Point - HTTP",
+      "status": "FAIL",
+      "response_time": 0.024621009826660156,
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/admins/search",
+      "test_name": "Admin Search - By Bbox - HTTP",
+      "status": "FAIL",
+      "response_time": 0.02589726448059082,
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/admins/USA.1_1/geojson",
+      "test_name": "Admin GeoJSON - Sample ID",
+      "status": "WARNING",
+      "response_time": 0.022598743438720703,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Used sample admin ID as no valid ID found"
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Validation: Invalid Year - Too Early",
+      "status": "WARNING",
+      "response_time": 0.02428579330444336,
+      "status_code": 200,
+      "error_message": "Expected 400 but got 200 (validation may be lenient)",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Validation: Invalid Year - Too Late",
+      "status": "WARNING",
+      "response_time": 0.022953510284423828,
+      "status_code": 200,
+      "error_message": "Expected 400 but got 200 (validation may be lenient)",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Validation: Invalid Limit - Too High",
+      "status": "WARNING",
+      "response_time": 0.08477258682250977,
+      "status_code": 200,
+      "error_message": "Expected 400 but got 200 (validation may be lenient)",
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Validation: Invalid Country Code",
+      "status": "PASS",
+      "response_time": 0.02557849884033203,
+      "status_code": 400,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Validation: Invalid Gas Type",
+      "status": "PASS",
+      "response_time": 0.05817580223083496,
+      "status_code": 400,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Validation: Invalid Date Range",
+      "status": "PASS",
+      "response_time": 0.025910377502441406,
+      "status_code": 400,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/assets",
+      "test_name": "Performance: Large Dataset Request",
+      "status": "PASS",
+      "response_time": 0.03259444236755371,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 10.0s"
+    },
+    {
+      "endpoint": "/country/emissions",
+      "test_name": "Performance: Multiple Countries Request",
+      "status": "PASS",
+      "response_time": 0.025162220001220703,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 5.0s"
+    },
+    {
+      "endpoint": "/assets/emissions",
+      "test_name": "Performance: Complex Asset Emissions Query",
+      "status": "PASS",
+      "response_time": 0.02543807029724121,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 8.0s"
+    }
+  ]
+}
