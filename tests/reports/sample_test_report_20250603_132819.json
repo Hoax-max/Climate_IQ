@@ -1,0 +1,45 @@
+{
+  "test_run": {
+    "timestamp": "2025-06-03T13:28:19.137705",
+    "framework_version": "1.0",
+    "total_tests": 25,
+    "execution_time": 45.2
+  },
+  "summary": {
+    "pass_rate": 88.0,
+    "apis_tested": 6,
+    "apis_available": 5
+  },
+  "api_results": {
+    "climate_trace": {
+      "status": "available",
+      "tests_passed": 8,
+      "tests_total": 10
+    },
+    "carbon_interface": {
+      "status": "available",
+      "tests_passed": 5,
+      "tests_total": 5
+    },
+    "openweather": {
+      "status": "available",
+      "tests_passed": 3,
+      "tests_total": 3
+    },
+    "nasa_power": {
+      "status": "available",
+      "tests_passed": 3,
+      "tests_total": 3
+    },
+    "world_bank": {
+      "status": "available",
+      "tests_passed": 3,
+      "tests_total": 4
+    },
+    "un_sdg": {
+      "status": "unavailable",
+      "tests_passed": 0,
+      "tests_total": 3
+    }
+  }
+}

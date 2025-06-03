@@ -1,0 +1,393 @@
+{
+  "test_run": {
+    "timestamp": "2025-06-03T13:25:34.618851",
+    "base_url": "https://www.carboninterface.com/api/v1",
+    "has_api_key": true,
+    "total_time": 2.187274932861328,
+    "total_tests": 30
+  },
+  "results": [
+    {
+      "endpoint": "/estimates",
+      "test_name": "Authentication - Valid API Key",
+      "status": "PASS",
+      "response_time": 0.20570683479309082,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "authenticated": true
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Electricity - Basic US",
+      "status": "PASS",
+      "response_time": 0.1135103702545166,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 40.33,
+        "electricity_value": 100,
+        "country": "us"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Electricity - Different Country",
+      "status": "PASS",
+      "response_time": 0.05681657791137695,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 30.1,
+        "electricity_value": 100,
+        "country": "de"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Electricity - Large Consumption",
+      "status": "PASS",
+      "response_time": 0.10135722160339355,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 4032.65,
+        "electricity_value": 10000,
+        "country": "us"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Electricity - Small Consumption",
+      "status": "PASS",
+      "response_time": 0.059500694274902344,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 0.4,
+        "electricity_value": 1,
+        "country": "us"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Electricity - MWh Unit",
+      "status": "PASS",
+      "response_time": 0.057000160217285156,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 403.27,
+        "electricity_value": 1,
+        "country": "us"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Vehicle - Basic Car Trip",
+      "status": "PASS",
+      "response_time": 0.055794715881347656,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 23.01,
+        "distance_value": 100,
+        "distance_unit": "km"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Vehicle - Miles Unit",
+      "status": "PASS",
+      "response_time": 0.06057333946228027,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 37.03,
+        "distance_value": 100,
+        "distance_unit": "mi"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Vehicle - Long Distance",
+      "status": "PASS",
+      "response_time": 0.05579042434692383,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 230.09,
+        "distance_value": 1000,
+        "distance_unit": "km"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Vehicle - Short Distance",
+      "status": "PASS",
+      "response_time": 0.06322097778320312,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 1.15,
+        "distance_value": 5,
+        "distance_unit": "km"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Flight - Domestic Short",
+      "status": "PASS",
+      "response_time": 0.08686590194702148,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 55.03,
+        "passengers": 1,
+        "legs_count": 1
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Flight - International Long",
+      "status": "PASS",
+      "response_time": 0.06087517738342285,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 877.94,
+        "passengers": 1,
+        "legs_count": 1
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Flight - Multiple Passengers",
+      "status": "PASS",
+      "response_time": 0.06584000587463379,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 671.96,
+        "passengers": 4,
+        "legs_count": 1
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Flight - Round Trip",
+      "status": "PASS",
+      "response_time": 0.07316803932189941,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 1301.58,
+        "passengers": 1,
+        "legs_count": 2
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Flight - Multi-City Trip",
+      "status": "PASS",
+      "response_time": 0.11146736145019531,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 1555.03,
+        "passengers": 1,
+        "legs_count": 3
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Shipping - Basic Package",
+      "status": "PASS",
+      "response_time": 0.06453132629394531,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 0.06,
+        "weight_value": 10,
+        "distance_value": 100,
+        "transport_method": "truck"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Shipping - Air Transport",
+      "status": "PASS",
+      "response_time": 0.06601238250732422,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 3.01,
+        "weight_value": 5,
+        "distance_value": 1000,
+        "transport_method": "plane"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Shipping - Ship Transport",
+      "status": "PASS",
+      "response_time": 0.054857492446899414,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 4.0,
+        "weight_value": 100,
+        "distance_value": 5000,
+        "transport_method": "ship"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Shipping - Train Transport",
+      "status": "PASS",
+      "response_time": 0.055185794830322266,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": {
+        "carbon_kg": 0.55,
+        "weight_value": 50,
+        "distance_value": 500,
+        "transport_method": "train"
+      },
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Missing Type",
+      "status": "PASS",
+      "response_time": 0.047374725341796875,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Invalid Type",
+      "status": "PASS",
+      "response_time": 0.049510955810546875,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Negative Electricity Value",
+      "status": "PASS",
+      "response_time": 0.05431509017944336,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Invalid Country Code",
+      "status": "PASS",
+      "response_time": 0.052939653396606445,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Missing Required Fields",
+      "status": "PASS",
+      "response_time": 0.06160449981689453,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Invalid Vehicle Model ID",
+      "status": "PASS",
+      "response_time": 0.058200836181640625,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Validation - Invalid Airport Code",
+      "status": "PASS",
+      "response_time": 0.054024696350097656,
+      "status_code": 422,
+      "error_message": null,
+      "data_sample": null,
+      "notes": null
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Performance - Simple Calculation",
+      "status": "PASS",
+      "response_time": 0.0584568977355957,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 3.0s"
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Performance - Complex Flight",
+      "status": "PASS",
+      "response_time": 0.08289265632629395,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 5.0s"
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Performance - Large Electricity Value",
+      "status": "PASS",
+      "response_time": 0.0579833984375,
+      "status_code": 201,
+      "error_message": null,
+      "data_sample": null,
+      "notes": "Threshold: 3.0s"
+    },
+    {
+      "endpoint": "/estimates",
+      "test_name": "Consistency - Linear Scaling",
+      "status": "PASS",
+      "response_time": 0.139390230178833,
+      "status_code": 200,
+      "error_message": null,
+      "data_sample": {
+        "base_carbon": 40.33,
+        "double_carbon": 80.65,
+        "expected_double": 80.66
+      },
+      "notes": null
+    }
+  ]
+}
